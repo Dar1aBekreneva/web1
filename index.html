@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>Дарья Бекренёва · Брутализм</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo animate__animated animate__fadeInDown">Daria<span>·B</span></div>
+    <nav>
+      <ul class="nav-list" id="navList">
+        <li><a href="#about" class="animate__animated animate__fadeInDown delay-1">Обо мне</a></li>
+        <li><a href="#portfolio" class="animate__animated animate__fadeInDown delay-2">Портфолио</a></li>
+        <li><a href="#reviews" class="animate__animated animate__fadeInDown delay-3">Отзывы</a></li>
+        <li><a href="#contacts" class="animate__animated animate__fadeInDown delay-4">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burgerBtn" aria-label="меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text animate__animated animate__fadeInUp">
+          <h2>Бекренёва <span class="highlight">Дарья</span> Рауфовна</h2>
+          <div class="subhead">дизайнер · визионер</div>
+          <p>Создаю теплые, живые интерфейсы с душой. 10 лет в веб-дизайне — люблю эксперименты с цветом, формой и грубой эстетикой.</p>
+        </div>
+        <div class="about-badge animate__animated animate__fadeInRight delay-1">
+          <div class="number">10+</div>
+          <div class="label">лет опыта</div>
+          <div class="sub">🔥 70+ проектов</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeInUp">Портфолио</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item animate__animated animate__fadeInUp delay-1">
+          <span class="img-place"></span>
+          <h3>Брендинг «Золото»</h3>
+          <p>Айдентика для кофейни</p>
+        </div>
+        <div class="portfolio-item animate__animated animate__fadeInUp delay-2">
+          <span class="img-place"></span>
+          <h3>Сайт-портал</h3>
+          <p>digital-агентство</p>
+        </div>
+        <div class="portfolio-item animate__animated animate__fadeInUp delay-3">
+          <span class="img-place"></span>
+          <h3>Мобильное приложение</h3>
+          <p>доставка «Огонёк»</p>
+        </div>
+        <div class="portfolio-item animate__animated animate__fadeInUp delay-4">
+          <span class="img-place"></span>
+          <h3>Визуальные системы</h3>
+          <p>градиенты · неон</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeInUp">Отзывы</h2>
+      <div class="reviews-grid">
+        <div class="review-card animate__animated animate__fadeInUp delay-1">
+          <div class="stars">★★★★★</div>
+          <div class="text">«Дарья создала невероятно уютный и стильный дизайн. Работает с теплотой и вниманием к деталям.»</div>
+          <div class="name">— Алексей К.</div>
+        </div>
+        <div class="review-card animate__animated animate__fadeInUp delay-2">
+          <div class="stars">★★★★★</div>
+          <div class="text">«Профессионал своего дела. Сайт получился живым, современным, а главное — конверсионным.»</div>
+          <div class="name">— Екатерина М.</div>
+        </div>
+        <div class="review-card animate__animated animate__fadeInUp delay-3">
+          <div class="stars">★★★★★</div>
+          <div class="text">«Очень понравился подход к цветам и градиентам. Дарья чувствует стиль на 100%»</div>
+          <div class="name">— Олег В.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="container">
+      <h2 class="section-title animate__animated animate__fadeInUp">Контакты</h2>
+      <div class="contacts-flex">
+        <div class="contacts-info animate__animated animate__fadeInLeft">
+          <a href="mailto:daria@design.ru">✉ daria@design.ru</a>
+          <a href="tel:+79123456789">✆ +7 (912) 345-67-89</a>
+          <div class="tag-row">
+            <span>Telegram</span>
+            <span>WhatsApp</span>
+          </div>
+        </div>
+        <div class="contact-social animate__animated animate__fadeInRight delay-1">
+          <a href="#">Be</a>
+          <a href="#">Dr</a>
+          <a href="#">In</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="container">
+  <span class="copy">© 2026 Бекренёва Дарья · дизайн</span>
+  <div class="footer-social">
+    <a href="#">Be</a>
+    <a href="#">Dr</a>
+    <a href="#">In</a>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    const burger = document.getElementById('burgerBtn');
+    const nav = document.getElementById('navList');
+
+    burger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      nav.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-list a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      const isNav = nav.contains(e.target);
+      const isBurger = burger.contains(e.target);
+      if (!isNav && !isBurger && nav.classList.contains('active')) {
+        nav.classList.remove('active');
+      }
+    });
+  })();
+</script>
+</body>
+</html>
